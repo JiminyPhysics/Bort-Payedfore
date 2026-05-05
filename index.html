@@ -4,8 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bort & Payedfore IP Rankings 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
+  html { visibility: hidden; }
+  html.fonts-loaded { visibility: visible; }
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   :root {
     --navy: #0d1b2e; --navy-mid: #1a2e4a;
@@ -13,7 +17,7 @@
     --cream: #faf8f3; --text: #1a1a1a; --text-mid: #3a3a3a; --text-muted: #6a6a6a;
     --tier3: #a0673a; --tier4: #3a6a4a;
   }
-  body { font-family: 'EB Garamond', Georgia, serif; background: var(--cream); color: var(--text); font-size: 17px; line-height: 1.7; scroll-behavior: smooth; }
+  body { font-family: 'EB Garamond', Georgia, serif; background: var(--cream); color: var(--text); font-size: 17px; line-height: 1.7; }
   .nav-item a { text-decoration: none; color: inherit; display: block; }
 
   .header-stripe { height: 4px; background: linear-gradient(90deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%); }
@@ -730,5 +734,31 @@
   <em>Disclaimer: All rankings are the result of an independent editorial process. Research contributions facilitate the survey and data-collection process only and do not influence editorial decisions in any way. Probably. Firm tier thresholds are set annually by the editorial board and bear no relationship to the level of institutional research contributions received. The Aldrich Whitman Award criteria are applied with full objectivity and no awareness of irony whatsoever. Bort &amp; Payedfore accepts no liability for any misinterpretation of our ranking criteria, methodology, or fee structures. The term "independent" is used in a broad and generous sense.</em>
 </footer>
 
+</body>
+<script>
+  // ── Font loading: reveal page only once fonts are ready ──
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function() {
+      document.documentElement.classList.add('fonts-loaded');
+    });
+  } else {
+    document.documentElement.classList.add('fonts-loaded');
+  }
+
+  // ── Smooth scroll with sticky nav offset compensation ──
+  document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      var targetId = this.getAttribute('href');
+      if (!targetId || targetId === '#') return;
+      var target = document.querySelector(targetId);
+      if (!target) return;
+      e.preventDefault();
+      var nav = document.querySelector('.site-nav');
+      var navHeight = nav ? nav.offsetHeight : 0;
+      var targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 16;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+    });
+  });
+</script>
 </body>
 </html>
