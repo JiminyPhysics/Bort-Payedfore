@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bort & Payedfore IP Rankings 2026</title>
+<title>Bort &amp; Payedfore IP Rankings 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -46,29 +46,6 @@
 
   .methodology-note { background: var(--gold-pale); border-left: 3px solid var(--gold); padding: 1rem 1.3rem; margin-bottom: 2rem; font-size: 1.05rem; color: var(--text-mid); font-style: italic; line-height: 1.65; }
   .methodology-note strong { font-style: normal; color: var(--navy); }
-
-  /* Founding member card */
-  .founder-card {
-    background: var(--navy); border: 2px solid var(--gold); border-radius: 6px;
-    padding: 1.4rem 1.6rem; margin-bottom: 1.5rem;
-    display: grid; grid-template-columns: 52px 1fr auto; align-items: center; gap: 1.2rem;
-    position: relative; overflow: hidden;
-  }
-  .founder-card::before {
-    content: ''; position: absolute; inset: 0;
-    background: repeating-linear-gradient(45deg, transparent, transparent 18px, rgba(184,151,42,0.04) 18px, rgba(184,151,42,0.04) 19px);
-    pointer-events: none;
-  }
-  .founder-ribbon { position: absolute; top: 0; right: 0; background: var(--gold); color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 0.55rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; padding: 0.25rem 0.7rem; border-bottom-left-radius: 4px; }
-  .founder-rank { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--gold); text-align: center; line-height: 1; }
-  .founder-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
-  .founder-firm { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; margin-bottom: 0.4rem; }
-  .founder-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
-  .founder-tag { font-family: 'Montserrat', sans-serif; font-size: 0.58rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 2px; background: rgba(184,151,42,0.2); color: var(--gold-light); border: 0.5px solid rgba(184,151,42,0.4); }
-  .founder-tag.special { background: var(--gold); color: #fff; border-color: var(--gold); }
-  .founder-donation-col { text-align: right; }
-  .founder-donation-amount { font-family: 'Montserrat', sans-serif; font-size: 0.82rem; font-weight: 600; color: var(--gold-light); }
-  .founder-donation-label { font-family: 'Montserrat', sans-serif; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-top: 0.15rem; }
 
   /* Tier labels */
   .tier-section { margin-bottom: 2.5rem; }
@@ -145,6 +122,10 @@
   .aldrich-body { padding: 1.5rem 2rem; }
   .aldrich-criteria-note { font-size: 1rem; font-style: italic; color: var(--text-mid); margin-bottom: 1.3rem; line-height: 1.65; border-bottom: 0.5px solid #e0d9c8; padding-bottom: 1.2rem; }
   .aldrich-criteria-note strong { font-style: normal; color: var(--navy); }
+  .aldrich-criteria-list { margin: 0.9rem 0 0.5rem 0; padding-left: 0; list-style: none; }
+  .aldrich-criteria-list li { display: flex; gap: 0.7rem; margin-bottom: 0.65rem; }
+  .aldrich-criteria-list li:last-child { margin-bottom: 0; }
+  .aldrich-criteria-num { font-weight: 700; font-style: normal; min-width: 2rem; flex-shrink: 0; }
   .aldrich-winner { display: flex; align-items: center; gap: 1.5rem; }
   .aldrich-trophy-icon { width: 54px; height: 54px; background: var(--gold-pale); border: 1.5px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 22px; }
   .aldrich-winner-name { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; color: var(--navy); margin-bottom: 0.1rem; }
@@ -152,26 +133,18 @@
   .aldrich-winner-stats { display: flex; gap: 1.5rem; margin-top: 0.3rem; flex-wrap: wrap; }
   .aldrich-stat-val { font-family: 'Montserrat', sans-serif; font-size: 0.82rem; font-weight: 600; color: var(--gold); }
   .aldrich-stat-label { font-family: 'Montserrat', sans-serif; font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); }
-  .aldrich-footer-note { margin-top: 1.2rem; padding-top: 1rem; border-top: 0.5px solid #e0d9c8; font-family: 'Montserrat', sans-serif; font-size: 0.65rem; color: var(--text-muted); font-style: italic; line-height: 1.6; }
+  .aldrich-footer-note { margin-top: 1.2rem; padding-top: 1rem; border-top: 0.5px solid #e0d9c8; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; color: var(--text-muted); font-style: italic; line-height: 1.6; }
 
   /* Sidebar */
   .sidebar-box { background: #fff; border: 0.5px solid #e0d9c8; border-radius: 4px; margin-bottom: 1.5rem; overflow: hidden; }
   .sidebar-box-head { background: var(--navy); padding: 0.7rem 1.1rem; font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold-light); }
   .sidebar-box-body { padding: 1.1rem; }
   .methodology-item { display: flex; gap: 0.7rem; align-items: flex-start; margin-bottom: 0.9rem; font-size: 1rem; color: var(--text-mid); }
-  .method-icon { width: 22px; height: 22px; background: var(--gold-pale); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--gold); flex-shrink: 0; margin-top: 1px; font-family: 'Montserrat', sans-serif; font-weight: 700; }
+  .method-icon { width: 22px; height: 22px; background: var(--gold-pale); border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--gold); flex-shrink: 0; margin-top: 3px; font-family: 'Montserrat', sans-serif; font-weight: 700; }
   .stat-row { display: flex; justify-content: space-between; align-items: baseline; padding: 0.55rem 0; border-bottom: 0.5px solid #ede8d8; font-size: 0.82rem; }
   .stat-row:last-child { border-bottom: none; }
   .stat-label { color: var(--text-muted); font-family: 'Montserrat', sans-serif; font-size: 0.72rem; }
   .stat-val { font-weight: 600; color: var(--navy); font-family: 'Montserrat', sans-serif; font-size: 0.78rem; }
-
-  /* Apply box */
-  .apply-box { background: var(--navy); border-radius: 4px; padding: 1.3rem; text-align: center; color: #fff; }
-  .apply-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
-  .apply-desc { font-size: 0.78rem; color: rgba(255,255,255,0.65); font-family: 'Montserrat', sans-serif; margin-bottom: 1rem; line-height: 1.5; }
-  .apply-btn { background: var(--gold); color: #fff; border: 2px solid var(--gold-light); padding: 0.7rem 1.5rem; font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; border-radius: 2px; cursor: pointer; width: 100%; transition: background 0.2s; box-shadow: 0 0 0 3px rgba(212,176,74,0.25); }
-  .apply-btn:hover { background: var(--gold-light); }
-  .apply-fine { font-size: 0.6rem; color: rgba(255,255,255,0.35); font-family: 'Montserrat', sans-serif; margin-top: 0.6rem; line-height: 1.5; }
 
   .editorial-quote { background: var(--navy); color: rgba(255,255,255,0.9); padding: 2.5rem 3rem; text-align: center; position: relative; }
   .editorial-quote::before { content: '\201C'; font-family: 'Playfair Display', serif; font-size: 5rem; color: var(--gold); position: absolute; top: 0.5rem; left: 2rem; line-height: 1; opacity: 0.5; }
@@ -186,7 +159,7 @@
     .aldrich-winner { flex-direction: column; }
   }
   @media (max-width: 640px) {
-    .firm-name { font-size: 1.8rem; }
+    .firm-name { font-size: 1.6rem; }
     .rising-stars-grid { grid-template-columns: 1fr; }
     .prac-card { grid-template-columns: 36px 1fr; }
     .donation-col { display: none; }
@@ -195,7 +168,6 @@
     .firm-table { font-size: 0.78rem; }
     .firm-headcount { display: none; }
     .header-inner { padding: 2rem 1rem 1.5rem; }
-    .firm-name { font-size: 1.6rem; }
     .editorial-quote { padding: 2rem 1.5rem; }
     .editorial-quote::before { display: none; }
     .aldrich-body { padding: 1rem; }
@@ -248,7 +220,7 @@
       <strong>Editorial note:</strong> Rankings reflect the outcome of our proprietary <em>Donor-Weighted Peer Perception Index</em> (DWPPI), incorporating practitioner surveys, client references, and the volume and sincerity of each candidate's financial commitment to the editorial process. Practitioners demonstrating exceptional commitment are recognised accordingly.
     </div>
 
-    <!-- Tier 1 — includes founding member James Richardson-Bullock at #1 -->
+    <!-- Tier 1 -->
     <div class="tier-section">
       <div class="tier-label">
         <span class="tier-badge tier-1">Gold Tier — Platinum Luminary</span>
@@ -281,7 +253,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$2,950</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
           <div class="star-marker">&#9733;&#9733;&#9733;</div>
         </div>
@@ -294,7 +266,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$2,750</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
           <div class="star-marker">&#9733;&#9733;&#9733;</div>
         </div>
@@ -307,7 +279,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$2,600</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
           <div class="star-marker">&#9733;&#9733;&#9733;</div>
         </div>
@@ -330,7 +302,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$2,200</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
         <div class="prac-card">
@@ -342,7 +314,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$2,100</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
         <div class="prac-card">
@@ -354,7 +326,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$1,975</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
       </div>
@@ -376,7 +348,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$1,850</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
         <div class="prac-card">
@@ -388,7 +360,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$1,750</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
       </div>
@@ -410,7 +382,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$1,500</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
         <div class="prac-card">
@@ -422,7 +394,7 @@
           </div>
           <div class="donation-col">
             <div class="donation-amount">$1,250</div>
-            <div class="donation-label">Research Contribution</div>
+            <div class="donation-label">&ldquo;Research Contribution&rdquo;</div>
           </div>
         </div>
       </div>
@@ -436,7 +408,7 @@
     <div class="section-rule"></div>
 
     <div class="methodology-note">
-      <strong>Firm rankings</strong> are assessed on aggregate practitioner distinction, jurisdictional breadth, and the firm's collective commitment to supporting the research process. Firms with multiple ranked practitioners benefit from a consolidated institutional research contribution, reflecting the economies of scale that naturally accompany institutional generosity.
+      <strong>Firm rankings</strong> are assessed on aggregate practitioner distinction, jurisdictional breadth, and the firm's collective commitment to supporting the research process. Firms with multiple ranked practitioners benefit from a consolidated institutional &ldquo;research contribution&rdquo;, reflecting the economies of scale that naturally accompany institutional generosity.
     </div>
 
     <table class="firm-table">
@@ -445,129 +417,69 @@
           <th style="width:52px;">#</th>
           <th>Firm</th>
           <th style="text-align:center; width:80px;">Ranked<br>Partners</th>
-          <th class="right" style="width:140px;">Research<br>Contribution</th>
+          <th class="right" style="width:150px;">&ldquo;Research<br>Contribution&rdquo;</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td class="firm-rank-num"><span class="pip pip-gold"></span>1</td>
-          <td>
-            <div class="firm-name-cell">Stuffington, Graft &amp; Plentifull LLP</div>
-            <div class="firm-jurisdiction">London &nbsp;·&nbsp; New York &nbsp;·&nbsp; Hong Kong</div>
-          </td>
+          <td><div class="firm-name-cell">Stuffington, Graft &amp; Plentifull LLP</div><div class="firm-jurisdiction">London &nbsp;·&nbsp; New York &nbsp;·&nbsp; Hong Kong</div></td>
           <td class="firm-headcount">6</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$11,400</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$11,400</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num"><span class="pip pip-gold"></span>2</td>
-          <td>
-            <div class="firm-name-cell">Goldsworth Penn &amp; Associates</div>
-            <div class="firm-jurisdiction">New York &nbsp;·&nbsp; Washington D.C.</div>
-          </td>
+          <td><div class="firm-name-cell">Goldsworth Penn &amp; Associates</div><div class="firm-jurisdiction">New York &nbsp;·&nbsp; Washington D.C.</div></td>
           <td class="firm-headcount">5</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$10,750</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$10,750</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num"><span class="pip pip-gold"></span>3</td>
-          <td>
-            <div class="firm-name-cell">Monesworth Chambers</div>
-            <div class="firm-jurisdiction">London &nbsp;·&nbsp; Edinburgh</div>
-          </td>
+          <td><div class="firm-name-cell">Monesworth Chambers</div><div class="firm-jurisdiction">London &nbsp;·&nbsp; Edinburgh</div></td>
           <td class="firm-headcount">4</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$10,200</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$10,200</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num silver"><span class="pip pip-silver"></span>4</td>
-          <td>
-            <div class="firm-name-cell">Bringhurst IP Group</div>
-            <div class="firm-jurisdiction">Paris &nbsp;·&nbsp; Brussels &nbsp;·&nbsp; Munich</div>
-          </td>
+          <td><div class="firm-name-cell">Bringhurst IP Group</div><div class="firm-jurisdiction">Paris &nbsp;·&nbsp; Brussels &nbsp;·&nbsp; Munich</div></td>
           <td class="firm-headcount">4</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$9,800</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$9,800</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num silver"><span class="pip pip-silver"></span>5</td>
-          <td>
-            <div class="firm-name-cell">Priory Smyth IP</div>
-            <div class="firm-jurisdiction">Singapore &nbsp;·&nbsp; Sydney &nbsp;·&nbsp; Tokyo</div>
-          </td>
+          <td><div class="firm-name-cell">Priory Smyth IP</div><div class="firm-jurisdiction">Singapore &nbsp;·&nbsp; Sydney &nbsp;·&nbsp; Tokyo</div></td>
           <td class="firm-headcount">3</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$9,500</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$9,500</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num silver"><span class="pip pip-silver"></span>6</td>
-          <td>
-            <div class="firm-name-cell">Credde &amp; Cardigan Solicitors</div>
-            <div class="firm-jurisdiction">Sydney &nbsp;·&nbsp; Melbourne</div>
-          </td>
+          <td><div class="firm-name-cell">Credde &amp; Cardigan Solicitors</div><div class="firm-jurisdiction">Sydney &nbsp;·&nbsp; Melbourne</div></td>
           <td class="firm-headcount">3</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$9,100</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$9,100</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num bronze"><span class="pip pip-bronze"></span>7</td>
-          <td>
-            <div class="firm-name-cell">Finchley Moore &amp; Co</div>
-            <div class="firm-jurisdiction">Toronto &nbsp;·&nbsp; Vancouver</div>
-          </td>
+          <td><div class="firm-name-cell">Finchley Moore &amp; Co</div><div class="firm-jurisdiction">Toronto &nbsp;·&nbsp; Vancouver</div></td>
           <td class="firm-headcount">2</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$8,600</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$8,600</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num bronze"><span class="pip pip-bronze"></span>8</td>
-          <td>
-            <div class="firm-name-cell">Fforde IP Partners</div>
-            <div class="firm-jurisdiction">Dublin &nbsp;·&nbsp; London</div>
-          </td>
+          <td><div class="firm-name-cell">Fforde IP Partners</div><div class="firm-jurisdiction">Dublin &nbsp;·&nbsp; London</div></td>
           <td class="firm-headcount">2</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$8,250</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$8,250</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num green"><span class="pip pip-green"></span>9</td>
-          <td>
-            <div class="firm-name-cell">Oakes Bottington LLP</div>
-            <div class="firm-jurisdiction">Hong Kong &nbsp;·&nbsp; Shanghai</div>
-          </td>
+          <td><div class="firm-name-cell">Oakes Bottington LLP</div><div class="firm-jurisdiction">Hong Kong &nbsp;·&nbsp; Shanghai</div></td>
           <td class="firm-headcount">2</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$7,900</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$7,900</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
         <tr>
           <td class="firm-rank-num green"><span class="pip pip-green"></span>10</td>
-          <td>
-            <div class="firm-name-cell">Oldcastle, Whitmore &amp; Ffogg LLP</div>
-            <div class="firm-jurisdiction">London &nbsp;·&nbsp; Est. 1891</div>
-          </td>
+          <td><div class="firm-name-cell">Oldcastle, Whitmore &amp; Ffogg LLP</div><div class="firm-jurisdiction">London &nbsp;·&nbsp; Est. 1891</div></td>
           <td class="firm-headcount">1</td>
-          <td class="firm-donation-cell">
-            <div class="firm-donation-val">$7,500</div>
-            <div class="firm-donation-sub">Institutional</div>
-          </td>
+          <td class="firm-donation-cell"><div class="firm-donation-val">$7,500</div><div class="firm-donation-sub">Institutional</div></td>
         </tr>
       </tbody>
     </table>
@@ -587,25 +499,25 @@
       <div class="rs-card">
         <div class="rs-name">Oberon J. Tillington-Cash</div>
         <div class="rs-firm">Tillington &amp; Cash LLP · London</div>
-        <div class="rs-donation-label">Research Contribution</div>
+        <div class="rs-donation-label">&ldquo;Research Contribution&rdquo;</div>
         <div class="rs-donation">$1,800</div>
       </div>
       <div class="rs-card">
         <div class="rs-name">Araminta Phelps-Dewsbury</div>
         <div class="rs-firm">Dewsbury IP · New York</div>
-        <div class="rs-donation-label">Research Contribution</div>
+        <div class="rs-donation-label">&ldquo;Research Contribution&rdquo;</div>
         <div class="rs-donation">$1,650</div>
       </div>
       <div class="rs-card">
         <div class="rs-name">Gideon Farthington-Wells</div>
         <div class="rs-firm">Farthington IP · Munich</div>
-        <div class="rs-donation-label">Research Contribution</div>
+        <div class="rs-donation-label">&ldquo;Research Contribution&rdquo;</div>
         <div class="rs-donation">$1,600</div>
       </div>
       <div class="rs-card">
         <div class="rs-name">Suki O. Montague-Fenn</div>
         <div class="rs-firm">Montague Fenn &amp; Co · Tokyo</div>
-        <div class="rs-donation-label">Research Contribution</div>
+        <div class="rs-donation-label">&ldquo;Research Contribution&rdquo;</div>
         <div class="rs-donation">$1,500</div>
       </div>
     </div>
@@ -614,7 +526,7 @@
     <div id="section-aldrich" class="aldrich-section">
       <div class="section-head">
         <div class="section-title">The Aldrich Whitman Award</div>
-        <div class="section-subtitle">Named Recognition · Est. 1987</div>
+        <div class="section-subtitle">Named Recognition · Est. MMXXVI</div>
       </div>
       <div class="section-rule"></div>
 
@@ -626,7 +538,7 @@
             <circle cx="32" cy="32" r="18" fill="none" stroke="#b8972a" stroke-width="0.75" stroke-dasharray="3,2"/>
             <text x="32" y="27" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#b8972a" font-weight="700">ALDRICH</text>
             <text x="32" y="37" text-anchor="middle" font-family="Georgia,serif" font-size="8" fill="#b8972a" font-weight="700">WHITMAN</text>
-            <text x="32" y="47" text-anchor="middle" font-family="Georgia,serif" font-size="6" fill="#b8972a" opacity="0.7">MMXXV</text>
+            <text x="32" y="47" text-anchor="middle" font-family="Georgia,serif" font-size="6" fill="#b8972a" opacity="0.7">MMXXVI</text>
           </svg>
           <div>
             <div class="aldrich-kicker">Bort &amp; Payedfore Distinguished Honours</div>
@@ -636,7 +548,21 @@
         </div>
         <div class="aldrich-body">
           <div class="aldrich-criteria-note">
-            <strong>Selection Criteria:</strong> The Aldrich Whitman Award is conferred annually upon the practitioner who most fully embodies the <em>foundational character</em> of the intellectual property profession. Our editorial panel assesses candidates across three equally-weighted pillars: <strong>(i) Accumulated Personal Wealth</strong>, as evidenced by firm equity position, personal asset disclosures, and club memberships of appropriate exclusivity; <strong>(ii) Ethnic and Cultural Heritage</strong>, with particular regard to the candidate's roots in the Anglo-Saxon common law tradition and alignment with the profession's foundational demographics; and <strong>(iii) Chromosomal Diversity Profile</strong>, reflecting our deep and genuine commitment to diversity in all its forms. The panel is proud to report that every recipient of the Aldrich Whitman Award has demonstrated full chromosomal diversity within their own genome, carrying both an X <em>and</em> a Y chromosome — a remarkable and consistent expression of the rich biological variety the profession continues to celebrate.
+            <strong>Selection Criteria:</strong> The Aldrich Whitman Award is conferred annually upon the practitioner who most fully embodies the <em>foundational character</em> of the intellectual property profession. Our editorial panel assesses candidates across three equally-weighted pillars:
+            <ol class="aldrich-criteria-list">
+              <li>
+                <span class="aldrich-criteria-num">(i)</span>
+                <span><strong>Accumulated Personal Wealth</strong>, as evidenced by firm equity position, personal asset disclosures, and club memberships of appropriate exclusivity.</span>
+              </li>
+              <li>
+                <span class="aldrich-criteria-num">(ii)</span>
+                <span><strong>Ethnic and Cultural Heritage</strong>, with particular regard to the candidate's roots in the Anglo-Saxon common law tradition and alignment with the profession's foundational demographics.</span>
+              </li>
+              <li>
+                <span class="aldrich-criteria-num">(iii)</span>
+                <span><strong>Chromosomal Diversity Profile</strong>, reflecting our deep and genuine commitment to diversity in all its forms. The panel is proud to report that every recipient of the Aldrich Whitman Award has demonstrated full chromosomal diversity within their own genome, carrying both an X <em>and</em> a Y chromosome — a remarkable and consistent expression of the rich biological variety the profession continues to celebrate.</span>
+              </li>
+            </ol>
           </div>
           <div class="aldrich-winner">
             <div class="aldrich-trophy-icon">&#127942;</div>
@@ -646,7 +572,7 @@
               <div class="aldrich-winner-stats">
                 <div>
                   <div class="aldrich-stat-val">$4,800</div>
-                  <div class="aldrich-stat-label">Research Contribution</div>
+                  <div class="aldrich-stat-label">&ldquo;Research Contribution&rdquo;</div>
                 </div>
                 <div>
                   <div class="aldrich-stat-val">52 yrs</div>
@@ -679,7 +605,7 @@
       <div class="sidebar-box-head">Our Methodology</div>
       <div class="sidebar-box-body">
         <div class="methodology-item"><div class="method-icon">1</div><div>Practitioners self-nominate via our secure online portal and submit supporting materials.</div></div>
-        <div class="methodology-item"><div class="method-icon">2</div><div>A research facilitation fee is submitted to cover our editorial team's rigorous analysis costs.</div></div>
+        <div class="methodology-item"><div class="method-icon">2</div><div>A &ldquo;research facilitation fee&rdquo; is submitted to cover our editorial team's rigorous analysis costs.</div></div>
         <div class="methodology-item"><div class="method-icon">3</div><div>Peer surveys are conducted. Higher-tier nominees benefit from premium survey distribution.</div></div>
         <div class="methodology-item"><div class="method-icon">4</div><div>Rankings are compiled by our fully independent editorial board. Financial independence is our cornerstone.</div></div>
       </div>
@@ -691,7 +617,7 @@
         <div class="stat-row"><span class="stat-label">Practitioners Ranked</span><span class="stat-val">1,847</span></div>
         <div class="stat-row"><span class="stat-label">Firms Ranked</span><span class="stat-val">394</span></div>
         <div class="stat-row"><span class="stat-label">Jurisdictions</span><span class="stat-val">62</span></div>
-        <div class="stat-row"><span class="stat-label">Total Research Contributions</span><span class="stat-val">$4.2M</span></div>
+        <div class="stat-row"><span class="stat-label">Total &ldquo;Research Contributions&rdquo;</span><span class="stat-val">$134,500</span></div>
         <div class="stat-row"><span class="stat-label">Editorial Independence</span><span class="stat-val">Guaranteed&#8482;</span></div>
       </div>
     </div>
@@ -731,10 +657,9 @@
   Global IP Rankings &amp; Recognition Intelligence &nbsp;·&nbsp; Est. MMXXVI &nbsp;·&nbsp; London · New York · Singapore<br>
   &copy; 2026 Bort &amp; Payedfore Publications Ltd. All rights reserved.<br>
   <br>
-  <em>Disclaimer: All rankings are the result of an independent editorial process. Research contributions facilitate the survey and data-collection process only and do not influence editorial decisions in any way. Probably. Firm tier thresholds are set annually by the editorial board and bear no relationship to the level of institutional research contributions received. The Aldrich Whitman Award criteria are applied with full objectivity and no awareness of irony whatsoever. Bort &amp; Payedfore accepts no liability for any misinterpretation of our ranking criteria, methodology, or fee structures. The term "independent" is used in a broad and generous sense.</em>
+  <em>Disclaimer: All rankings are the result of an independent editorial process. &ldquo;Research contributions&rdquo; facilitate the survey and data-collection process only and do not influence editorial decisions in any way. Probably. Firm tier thresholds are set annually by the editorial board and bear no relationship to the level of institutional &ldquo;research contributions&rdquo; received. The Aldrich Whitman Award criteria are applied with full objectivity and no awareness of irony whatsoever. Bort &amp; Payedfore accepts no liability for any misinterpretation of our ranking criteria, methodology, or fee structures. The term &ldquo;independent&rdquo; is used in a broad and generous sense.</em>
 </footer>
 
-</body>
 <script>
   // ── Font loading: reveal page only once fonts are ready ──
   if (document.fonts && document.fonts.ready) {
